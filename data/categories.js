@@ -1,14 +1,18 @@
 const categories = [
     {
-      "id": 1,
+        "id": 1,
+        "name": "All"
+      },
+    {
+      "id": 2,
       "name": "Italian"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Asian"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Moroccan"
       }
   ]
