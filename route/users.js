@@ -39,7 +39,7 @@ router
 
       users.push(user)
       res.redirect('/api/users/login');
-      res.status(201).json({ message: 'Registred successfully', user: user });
+    //   res.status(201).json({ message: 'Registred successfully', user: user });
     } catch {
       res.status(500).send()
     }

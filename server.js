@@ -31,7 +31,7 @@ const usernameExist = (req, res, next) => {
     // Check if the username exists in the users data
     const userExists = user.some(user => user.username === username);
 
-    // If the username exists, proceed to the next middleware
+    // If the username exists, proceed to  next 
     if (userExists) {
         return next();
     }
@@ -60,7 +60,7 @@ const validateRecipeData = (req, res, next) => {
     next();
 };
 
-// app.use('/api/recipes/:username',validateRecipeData);
+app.use('/api/recipes/:username',validateRecipeData);
 
 module.exports.validateRecipeData = validateRecipeData;
 

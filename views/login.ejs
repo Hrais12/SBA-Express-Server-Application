@@ -1,4 +1,4 @@
-<!-- views/login.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 <body>
     <div class="regContainer">
     <h1>Login TastyTable:</h1>
-    <form action="/api/users/login" method="POST">
+    <form id = "login" action="/api/users/login" method="POST">
         <div>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -19,7 +19,7 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit">Login</button>
+        <button class="find" type="submit">Login</button>
     </form>
 </div>
 </body>
