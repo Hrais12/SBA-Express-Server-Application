@@ -40,7 +40,7 @@ const usernameExist = (req, res, next) => {
     return res.status(404).json({ message: 'User not found' });
 };
 
-app.use('/api/recipes/:username',usernameExist);
+// app.use('/api/recipes/:username',usernameExist);
 
 module.exports.usernameExist = usernameExist;
 
@@ -60,7 +60,7 @@ const validateRecipeData = (req, res, next) => {
     next();
 };
 
-app.use('/api/recipes/:username',validateRecipeData);
+// app.use('/api/recipes/:username',validateRecipeData);
 
 module.exports.validateRecipeData = validateRecipeData;
 
