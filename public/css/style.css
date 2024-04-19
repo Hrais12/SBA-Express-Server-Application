@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(https://st4.depositphotos.com/9012638/40083/i/450/depositphotos_400838660-stock-photo-autumn-cooking-background-organic-autumn.jpg);
+    background-size:cover;
+    color: #333;
+    margin: 5em;
+
+}
+h1 {
+    color: #23476d;
+    text-align: center;
+}
+
+h2{
+    color: rgb(9, 103, 113);
+}
+
+.recipe{
+
+    text-align: left;
+
+    width: 60vw;
+
+    margin-bottom: 60px;
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
+
+}
+
+form{
+    text-align: center;
+    margin-left: 30% ;
+    margin-right: 30%;
+    background-color: aliceblue;
+    margin-bottom: 60px;
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
+}
+
+#password{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#email{
+    
+    margin-bottom: 10px;
+}
+
+.regContainer{
+    
+    width: 60vw;
+}
+
+
+.find{
+    background-color: rgb(53, 146, 151);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    
+  }

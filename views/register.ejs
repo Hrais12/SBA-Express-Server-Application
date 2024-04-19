@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Register</title>
 </head>
 <body>
-    <h1>Register</h1>
+    <div class="regContainer">
+    <h1>TastyTable:<br> Register to Explore Delicious Recipes </h1>
+    <div class="registerContainer">
     <form action="/api/users/register" method="POST">
         <div>
             <label for="username">Username:</label>
@@ -22,6 +25,7 @@
             <input type="email" id="email" name="email" required>
         </div>
         <button type="submit">Register</button>
-    </form>
+    </form></div>
+</div>
 </body>
 </html>

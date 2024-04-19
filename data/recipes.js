@@ -45,7 +45,7 @@ const recipes = [
   },
   {
     id: 3,
-    categoryId: 1,
+    categoryId: 2,
     title: "Caprese Salad",
     description: "Simple Italian salad with fresh tomatoes, mozzarella, basil, and balsamic glaze.",
     ingredients: [

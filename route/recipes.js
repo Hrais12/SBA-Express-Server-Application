@@ -13,7 +13,7 @@ const users = require("../data/users");
 router
 .route("/:username")
 .get((req,res)=>{
-    res.render('recipes',{ recipes: recipes });
+    res.render('recipes',{ recipes: recipes });   //views recipes
 })
 
 .post(usernameExist,validateRecipeData,(req,res)=>{

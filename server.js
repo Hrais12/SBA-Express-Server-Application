@@ -14,6 +14,9 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
+// Serve static files from the 'css' directory
+app.use('/public', express.static('public'));
+
 
 
 // Set EJS as the view engine

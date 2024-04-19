@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <div class="regContainer">
+    <h1>Login TastyTable:</h1>
     <form action="/api/users/login" method="POST">
         <div>
             <label for="username">Username:</label>
@@ -19,5 +21,6 @@
         </div>
         <button type="submit">Login</button>
     </form>
+</div>
 </body>
 </html>

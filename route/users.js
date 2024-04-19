@@ -14,7 +14,7 @@ router
 router
 .route("/register")
 .get((req,res)=>{
-    res.render('register');;
+    res.render('register');  // views register
 })
 .post(async (req, res) => {
 
@@ -49,7 +49,7 @@ router
 router
 .route("/login")
 .get( (req, res) => {
-    res.render('login');
+    res.render('login');  //views login
 })
 .post( async (req, res) => {
     const user = users.find(user => user.username === req.body.username)
@@ -74,8 +74,8 @@ router
   .route("/logout")
     .delete((req, res) => {
        
-        // res.redirect('/login');
-        res.send('you have successfully logout')
+        res.redirect('/login');
+        // res.send('you have successfully logout')
     });
 
 
