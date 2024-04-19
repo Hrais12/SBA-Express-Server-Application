@@ -22,6 +22,11 @@
         <textarea id="instructions" name="instructions" required></textarea>
         <input type="hidden" name="username" value="<%= username %>">
         <button class="find" type="submit">Add Recipe</button>
+       
     </form>
+    <div class="regAccount">
+        <p>Return to the Home page</p>
+        <a href="/api/recipes/<%= username %>"><button class="find">Home</button></a>
+        </div>
 </body>
 </html>
