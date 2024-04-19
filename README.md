@@ -6,11 +6,11 @@ User Authentication: Users can create an account, log in, and log out.
 Recipe Management: Users can create, view, edit, and delete their recipes.
 Category Filtering: Recipes are categorized for easy browsing.
 
-![alt text](image-2.png)
+![alt text](register.png)
 
-![alt text](image-1.png)
+![alt text](login.png)
 
-![alt text](image.png)
+![alt text](recipes.png)
 
 Technologies Used
 Node.js: Backend server environment.
