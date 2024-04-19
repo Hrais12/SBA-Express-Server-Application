@@ -111,3 +111,14 @@ h2{
     box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
 }
 
+.regAccount{
+    text-align: center;
+    margin-left: 35% ;
+    width: 15vw;
+    margin-bottom: 60px;
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
+}
