@@ -21,7 +21,7 @@ The TastyTable App is an application  that allows users to explore, create, edit
 - **Node.js:** Backend server environment.
 - **Express.js:** Web framework for building RESTful APIs.
 - **EJS:** Templating engine for server-side rendering of views.
-- **HTML/CSS:** Frontend design and layout.
+- **CSS:** Frontend design and layout.
 - **JavaScript:** Client-side scripting for interactive features.
 - **bcrypt:** Password hashing library for user authentication.
 
