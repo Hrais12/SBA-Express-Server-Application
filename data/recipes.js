@@ -1,17 +1,17 @@
 const recipes = [
 {
-    "id": 1,
-    "categoryId": 2,
-    "title": "Spaghetti Carbonara",
-    "description": "Classic Italian pasta dish with eggs, cheese, and pancetta.",
-    "ingredients": [
+    id: 1,
+    categoryId: 2,
+    title: "Spaghetti Carbonara",
+    description: "Classic Italian pasta dish with eggs, cheese, and pancetta.",
+    ingredients: [
       "200g spaghetti",
       "100g pancetta or guanciale",
       "2 large eggs",
       "50g Pecorino Romano cheese, grated",
       "Salt and black pepper to taste"
     ],
-    "instructions": [
+    instructions: [
       "Cook the spaghetti in a large pot of boiling salted water until al dente.",
       "In a separate pan, fry the pancetta until crispy.",
       "In a bowl, whisk together the eggs, grated cheese, salt, and pepper.",
@@ -21,11 +21,11 @@ const recipes = [
     ]
   },
   {
-    "id": 2,
-    "categoryId": 1,
-    "title": "Roast Chicken",
-    "description": "Classic roast chicken with crispy skin and tender meat.",
-    "ingredients": [
+    id: 2,
+    categoryId: 1,
+    title: "Roast Chicken",
+    description: "Classic roast chicken with crispy skin and tender meat.",
+    ingredients: [
       "1 whole chicken (about 1.5kg)",
       "2 tablespoons olive oil",
       "1 lemon, quartered",
@@ -33,7 +33,7 @@ const recipes = [
       "Salt and black pepper to taste",
       "Fresh herbs (such as rosemary, thyme, and parsley)"
     ],
-    "instructions": [
+    instructions: [
       "Preheat the oven to 200°C (400°F).",
       "Rinse the chicken inside and out and pat dry with paper towels.",
       "Rub the chicken with olive oil and season generously with salt and pepper.",
@@ -44,11 +44,11 @@ const recipes = [
     ]
   },
   {
-    "id": 3,
-    "categoryId": 1,
-    "title": "Caprese Salad",
-    "description": "Simple Italian salad with fresh tomatoes, mozzarella, basil, and balsamic glaze.",
-    "ingredients": [
+    id: 3,
+    categoryId: 1,
+    title: "Caprese Salad",
+    description: "Simple Italian salad with fresh tomatoes, mozzarella, basil, and balsamic glaze.",
+    ingredients: [
       "2 large ripe tomatoes",
       "200g fresh mozzarella cheese",
       "Handful of fresh basil leaves",
@@ -56,7 +56,7 @@ const recipes = [
       "Extra virgin olive oil",
       "Salt and black pepper to taste"
     ],
-    "instructions": [
+    instructions: [
       "Slice the tomatoes and mozzarella into thick slices.",
       "Arrange the tomato and mozzarella slices on a serving platter, alternating them and overlapping slightly.",
       "Tuck fresh basil leaves between the tomato and mozzarella slices.",

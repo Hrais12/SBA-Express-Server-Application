@@ -2,6 +2,9 @@ const express = require('express');
 
 const bodyParser = require("body-parser");
 
+const user = require("./data/users");
+
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -10,6 +13,26 @@ app.use(bodyParser.json({ extended: true }));
 
 
 
+const usernameExist = (req, res, next) => {
+    // Extract the username from the request parameters or body
+    const username = req.params.username;
+
+    // Check if the username exists in the users data
+    const userExists = user.some(user => user.username === username);
+
+    // If the username exists, proceed to the next middleware
+    if (userExists) {
+        return next();
+    }
+
+    // If the username does not exist, return an error response
+    return res.status(404).json({ message: 'User not found' });
+};
+
+app.use('/api/recipes/:username',usernameExist);
+
+
+  module.exports.usernameExist = usernameExist;
 
 //route imports
 const users = require("./route/users");
@@ -23,8 +46,21 @@ app.use("/api/users", users);
 app.use("/api/categories", categories);
 app.use("/api/recipes", recipes);
 
+app.get("/", (req, res) => {
+    res.send("Recipes Application in progress!");
+  });
 
 
+
+
+
+  
+
+  // 404 Middleware
+  app.use((req, res) => {
+    res.status(404);
+    res.json({ error: "Resource Not Found" });
+  });
 
 
 
