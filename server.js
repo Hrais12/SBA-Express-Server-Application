@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 
 const user = require("./data/users");
+const recipe = require("./data/recipes");
 
 
 const app = express();
@@ -31,8 +32,31 @@ const usernameExist = (req, res, next) => {
 
 app.use('/api/recipes/:username',usernameExist);
 
+module.exports.usernameExist = usernameExist;
 
-  module.exports.usernameExist = usernameExist;
+const validateRecipeData = (req, res, next) => {
+    const { categoryId, title, description, ingredients, instructions } = req.body;
+
+    // Validate input 
+    if (!categoryId || !title || !description || !ingredients || !instructions) {
+        return res.status(400).json({ message: 'All fields are required' });
+    } else {
+
+        if (recipe.find((r) => r.title == req.body.title)) {
+          res.json({ error: "already exist" });
+          return;
+        }
+    }
+    next();
+};
+
+app.use('/api/recipes/:username',validateRecipeData);
+
+module.exports.validateRecipeData = validateRecipeData;
+
+
+
+  
 
 //route imports
 const users = require("./route/users");
