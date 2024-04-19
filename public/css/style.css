@@ -30,7 +30,7 @@ h2{
 
 }
 
-#edit,#register,#login,#new{
+#register,#login{
     text-align: center;
     margin-left: 30% ;
     margin-right: 30%;
@@ -77,3 +77,37 @@ h2{
     display: flex;
    
   }
+
+  #categoryId,#ingredients,#description,#instructions{
+
+    margin: 10px;
+
+  }
+
+  #new{
+    text-align: left;
+    margin-left: 40% ;
+    /* margin-right: 30%; */
+    width: 15vw;
+    background-color: aliceblue;
+    margin-bottom: 60px;
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
+}
+  
+#edit{
+
+    text-align: left;
+    margin-left: 40% ;
+    /* margin-right: 30%; */
+    width: 15vw;
+    background-color: aliceblue;
+    margin-bottom: 60px;
+    padding: 30px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.2); 
+}
+
