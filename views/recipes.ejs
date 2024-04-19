@@ -1,0 +1,23 @@
+<!-- views/recipes.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <ul>
+        <% recipes.forEach(recipe => { %>
+            <li>
+                <h2><%= recipe.title %></h2>
+                <p><strong>Category:</strong> <%= recipe.categoryId %></p>
+                <p><strong>Description:</strong> <%= recipe.description %></p>
+                <p><strong>Ingredients:</strong> <%= recipe.ingredients %></p>
+                <p><strong>Instructions:</strong> <%= recipe.instructions %></p>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

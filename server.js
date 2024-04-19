@@ -6,11 +6,18 @@ const user = require("./data/users");
 const recipe = require("./data/recipes");
 
 
+
+
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
+
+
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
 
 
 
@@ -50,7 +57,7 @@ const validateRecipeData = (req, res, next) => {
     next();
 };
 
-app.use('/api/recipes/:username',validateRecipeData);
+// app.use('/api/recipes/:username',validateRecipeData);
 
 module.exports.validateRecipeData = validateRecipeData;
 

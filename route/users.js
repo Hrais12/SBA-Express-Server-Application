@@ -13,6 +13,9 @@ router
 
 router
 .route("/register")
+.get((req,res)=>{
+    res.render('register');;
+})
 .post(async (req, res) => {
 
     try {
@@ -35,7 +38,7 @@ router
 
 
       users.push(user)
-      
+      res.redirect('/api/users/login');
       res.status(201).json({ message: 'Registred successfully', user: user });
     } catch {
       res.status(500).send()
@@ -45,6 +48,9 @@ router
 
 router
 .route("/login")
+.get( (req, res) => {
+    res.render('login');
+})
 .post( async (req, res) => {
     const user = users.find(user => user.username === req.body.username)
     if (!user) {
@@ -53,8 +59,8 @@ router
     try {
       if(await bcrypt.compare(req.body.password, user.password)) {
         // res.send(`welcome ${req.body.username}`)
-          // Successful login: Redirect to /api/recipes
-          res.redirect('/api/recipes/:username');
+        //   Successful login: Redirect to /api/recipes
+          res.redirect(`/api/recipes/${req.body.username}`);
         
       } else {
         res.send('Invalid password or username')

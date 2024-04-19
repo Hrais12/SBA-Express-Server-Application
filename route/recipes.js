@@ -11,13 +11,11 @@ const users = require("../data/users");
 
 
 router
-.route("/")
+.route("/:username")
 .get((req,res)=>{
-    res.json(recipes);
+    res.render('recipes',{ recipes: recipes });
 })
 
-router
-.route("/:username")
 .post(usernameExist,validateRecipeData,(req,res)=>{
 
     // Extract recipe data from request body
@@ -41,16 +39,12 @@ router
     userId
   };
 
-  
-
     recipes.push(newRecipe );
 
     // Respond with a success message and the new recipe
     res.status(201).json({ message: 'Recipe added successfully', recipe: newRecipe });
 
-    
-  
-  
+
 });
 
 
